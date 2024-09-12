@@ -16,5 +16,5 @@ COPY src ./src
 # 6. Expose the port the app will run on
 EXPOSE 3000
 
-# 7. Define the command to run your app
+# 7. command to run app
 CMD ["npm", "start"]
