@@ -42,9 +42,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build . -t nikitadudhbhate01/product-service:${{ github.sha }}
+        run: docker build . -t nikitadudhbhate01/demo-reactapp:${{ github.sha }}
 
       - name: Push Docker image
-        run: docker push nikitadudhbhate01/product-service:${{ github.sha }}
+        run: docker push nikitadudhbhate01/demo-reactapp:${{ github.sha }}
      
    
